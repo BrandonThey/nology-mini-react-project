@@ -12,10 +12,15 @@ const Counter = () => {
     const handleDecrement = () => {
         setCounter(counter-1);
     }
-    
+
     return (
         <div>
-
+            <h4>Counter</h4>
+            <p>{counter}</p>
+            <div>
+                <p onClick={handleDecrement}>-</p>
+                <p onClick={handleIncrement}>+</p>
+            </div>
         </div>
     )
 }
