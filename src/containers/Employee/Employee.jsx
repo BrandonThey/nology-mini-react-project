@@ -6,7 +6,8 @@ const Employee = (props) => {
     const {employeesArr} = props;
 
     const employeeCards = employeesArr.map((employee) => {
-        return(<div className="employee-card">
+        return(
+        <div className="employee-card" key={employee.id}>
             <h3>Name: {employee.name}</h3>
             <h3>Role: {employee.role}</h3>
             <Counter />

@@ -1,7 +1,23 @@
 .employee-card{
     display: flex;
     border: 2px solid black;
-    width: 30%;
+    width: 16%;
     flex-direction: column;
     margin: 20px;
+    font-size: 10px;
+    border-radius: 10px;
+    background-image: linear-gradient(to bottom right, #0d324d, #7f5a83);
+    color: wheat;
+}
+
+@media screen and (max-width: 1024px){
+    .employee-card {
+        width: 25%;
+    }
+}
+
+@media screen and (max-width: 767px){
+    .employee-card {
+        width: 100%;
+    }
 }

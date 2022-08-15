@@ -14,10 +14,10 @@ const Counter = () => {
     }
 
     return (
-        <div>
+        <div className="counter">
             <h4>Counter</h4>
             <p>{counter}</p>
-            <div>
+            <div className="counter__p">
                 <p onClick={handleDecrement}>-</p>
                 <p onClick={handleIncrement}>+</p>
             </div>
