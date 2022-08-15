@@ -3,14 +3,20 @@ import "./Employee";
 import Counter from "../../components/Counter/Counter";
 
 const Employee = (props) => {
-    const {name, role} = props;
+    const {employeesArr} = props;
 
-    return (
-        <div>
-            <h3>Name: {name}</h3>
-            <h3>Role: {role}</h3>
+    const employeeCards = employeesArr.map((employee) => (
+        <>
+            <h3>Name: {employee.name}</h3>
+            <h3>Role: {employee.role}</h3>
             <Counter />
-        </div>
+        </>
+    ));
+    
+    return (
+        <>
+            <div>{employeeCards}</div>
+        </>
     )
 }
 

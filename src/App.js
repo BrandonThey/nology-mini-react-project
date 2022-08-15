@@ -9,7 +9,7 @@ import employees from "./data/employees";
 function App() {
   return (
     <div className="App">
-      <Employee name={employees[0].name} role={employees[0].role}/>
+      <Employee employeesArr={employees}/>
     </div>
   );
 }
